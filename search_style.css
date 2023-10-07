@@ -31,7 +31,7 @@ header {
     width: 100vw;
     position: fixed;
     bottom: 1;
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: end;
     background-color: var(--background-color);
@@ -101,7 +101,7 @@ header .frame{
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-left: 10vw;
 
 }
@@ -239,8 +239,8 @@ footer {
     background-color: var(--background-color);
 }
 
-footer nav li,
-footer nav li i {
+footer nav li a,
+footer nav li a i {
     display: flex;
     flex-direction: column;
     font-size: 13px;
@@ -254,9 +254,12 @@ footer nav ul li:hover,
 footer nav ul li i:hover {
     cursor: pointer;
 }
-
-.footer-search i,
-.footer-search {
+.footer-search a i,
+.footer-search a {
     color: var(--white);
     font-weight: 700;
+}
+
+footer nav ul li a {
+    text-decoration-line: none;
 }
