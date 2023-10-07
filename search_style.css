@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #1B1A1C;
+    --white: #fff;
+    --green: #1DB954;
+    --gray-h2: #9C9C9C;
+    --gray-h3: #B3B3B3;
+    /*for icons*/
+    --gray-neutral: #777777;
+    /* for inputs */
+    --gray-input-text: #282828;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    bottom: 1;
+    height: 80px;
+    display: flex;
+    align-items: end;
+    background-color: var(--background-color);
+
+}
+
+header .frame{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.frame .input-text-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-search {
+    position: relative;
+    width: 1.3rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--gray-input-text);
+}
+
+.icon-search i {
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 7px;
+
+}
+
+.search-field-input {
+    width: 65vw;
+    height: 2rem;
+    border: 0;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--gray-input-text);
+
+    color: var(--white);
+    font-size: 15px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 3px;
+}
+
+.search-cancel-button {
+    background-color: var(--background-color);
+    border: 0;
+}
+
+.search-field-input:focus{
+    outline: none;
+}
+
+.search-cancel-button:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.recents-searches-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin-top: 100px;
+    margin-left: 10vw;
+
+}
+
+.recents-searches-container h1 {
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.recent-searches-container-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5vh;
+}
+
+.recent-searches-container-item {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.recent-searches-container-item .item-image-icon img {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50px;
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-description .name {
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.item-description .category {
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--gray-h3);
+}
+
+.recent-searches-container-item .item-image-icon:hover {
+    cursor: pointer;
+}
+
+.recent-searches-container-item .name:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.recent-searches-container-item .category:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+}
+
+.footer-player {
+    display: flex;
+    justify-content: space-between;
+    height: 59px;
+    padding: 0 10px;
+    margin: 0px 15px;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #1DB954;
+}
+
+.footer-player img {
+    width: 37px;
+    height: 37px;
+    border-radius: 2px;
+    padding-right: 11px;
+}
+
+.footer-player img,
+.footer-player div {
+    order: 1;
+}
+
+.footer-music-artist:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.footer-player img {
+    cursor: pointer;
+}
+
+.footer-pause {
+    order: 2;
+    margin-left: auto;
+}
+
+.footer-pause:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+.footer-music-title {
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--white);
+}
+
+.footer-music-artist {
+    font-weight: 400;
+    font-size: 10.5px;
+    color: var(--gray-h3);
+}
+
+.icons-navigation {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 15px 0;
+    background-color: var(--background-color);
+}
+
+footer nav li,
+footer nav li i {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: var(--gray-neutral);
+}
+
+footer nav ul li:hover,
+footer nav ul li i:hover {
+    cursor: pointer;
+}
+
+.footer-search i,
+.footer-search {
+    color: var(--white);
+    font-weight: 700;
+}
