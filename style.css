@@ -170,8 +170,8 @@ footer nav ul {
 }
 
 
-footer nav ul li,
-footer nav ul li i {
+footer nav ul li a,
+footer nav ul li a i {
     display: flex;
     flex-direction: column;
     font-size: 13px;
@@ -186,8 +186,8 @@ footer nav ul li i:hover {
     cursor: pointer;
 }
 
-.footer-home i,
-.footer-home {
+.footer-home a i,
+.footer-home a {
     color: var(--white);
     font-weight: 700;
 }
@@ -202,4 +202,8 @@ footer nav ul li i:hover {
     font-weight: 400;
     font-size: 10.5px;
     color: var(--gray-h3);
+}
+
+footer nav ul li a {
+    text-decoration-line: none;
 }
