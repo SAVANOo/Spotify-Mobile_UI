@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --background-color: #1B1A1C;
+    --background-color-hover: #141315;
+    --white: #fff;
+    --green: #1DB954;
+    --gray-h2: #9C9C9C;
+    --gray-h3: #B3B3B3;
+    /*for icons*/
+    --gray-neutral: #777777;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+body {
+    background-color: var(--background-color);
+    min-height: 115vh;
+}
+
+header {
+    margin: 30px 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+header span{
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.fa-plus{
+    color: var(--gray-h3);
+}
+
+header img:hover,
+.fa-plus:hover {
+    cursor: pointer;
+}
+
+.container-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 17px;
+}
+
+.container-item:hover {
+    background-color: var(--background-color-hover);
+}
+
+.image-item {
+    width: 65px;
+    height: 65px;
+}
+
+.info-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+.title-item:hover,.artist-item:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.title-item{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.artist-item{
+    font-size: 13px;
+    color: var(--gray-h3);
+    font-weight: 500;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 15vh;
+    
+}
+
+.footer-player {
+    display: flex;
+    background-color: #550a1b;
+    border-radius: 10px;
+    margin: 0px 20px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 15px;
+}
+
+.footer-player img {
+    width: 30px;
+    height: 30px;
+    border-radius: 10%;
+    margin-right: 5px;
+}
+
+.footer-player img,
+.footer-player div {
+    order: 1;
+}
+
+.footer-music-artist:hover {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.footer-player img {
+    cursor: pointer;
+}
+
+.footer-pause {
+    order: 2;
+    margin-left: auto;
+}
+
+.footer-pause:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+footer nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    padding: 15px 0;
+    background-color: var(--background-color);
+}
+
+
+footer nav ul li a,
+footer nav ul li a i {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    color: var(--gray-neutral);
+}
+
+footer nav ul li:hover,
+footer nav ul li i:hover {
+    cursor: pointer;
+}
+
+.footer-home a i,
+.footer-home a {
+    color: var(--white);
+    font-weight: 700;
+}
+
+.footer-music-title {
+    font-weight: 600;
+    font-size: 13.5px;
+    color: var(--white);
+}
+
+.footer-music-artist {
+    font-weight: 400;
+    font-size: 10.5px;
+    color: var(--gray-h3);
+}
+
+footer nav ul li a {
+    text-decoration-line: none;
+}
