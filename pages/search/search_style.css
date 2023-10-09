@@ -168,6 +168,7 @@ header .frame{
     text-decoration-line: underline;
 }
 
+/*
 footer {
     position: fixed;
     bottom: 0;
@@ -263,3 +264,5 @@ footer nav ul li i:hover {
 footer nav ul li a {
     text-decoration-line: none;
 }
+
+*/
